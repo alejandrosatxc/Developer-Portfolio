@@ -2,7 +2,7 @@ export default function Projects() {
     return (
         <>
             <h1 className="text-6xl text-red-500 m-4">Different Projects that I have worked on</h1>
-            <ul className="text-red-500 text-3xl">
+            <ul className="text-red-500 text-3xl m-4">
                 <li>Bell-Ripper Document Automation Fullstack App</li>
                 <li>Template-to-Form Builder Fullstack App</li>
                 <li>Bexar-Facts Data Dashboard, visualizing polling results in Bexar county</li>

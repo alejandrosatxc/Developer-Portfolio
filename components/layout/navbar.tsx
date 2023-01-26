@@ -24,7 +24,7 @@ export default function Navbar() {
                         {
                             menuItems.map(item => {
                                 return (
-                                    <li key={item.title} className="text-red-500 mx-8">
+                                    <li key={item.title} className="text-red-500 text-2xl mx-8">
                                         <Link href={item.path}>{item.title}</Link>
                                     </li>
                                 )
