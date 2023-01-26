@@ -31,7 +31,7 @@ export default function Resume() {
                         <h3 className="text-red-700 text-xl">October 2019 - PRESENT,  San Antonio, TX</h3>
                         <p className="text-red-500 text-2xl">Develop, engineer and deploy full-stack applications according to client requirements. Develop automation of company processes and procedures. Hire, train, and supervise programming interns. Maintain a Database of constituents for political fundraising. </p>
                         <br />
-                        <h2 className="text-red-500 text-2xl">Palm Restaurant / Server/Supervisor / Tech Director/Lead Developer/Database Manager</h2>
+                        <h2 className="text-red-500 text-2xl">Palm Restaurant / Server/Supervisor</h2>
                         <h3 className="text-red-700 text-xl">November 2013 - March 2020,  San Antonio TX</h3>
                         <p className="text-red-500 text-2xl">Provide fine dining lunch and dinner service to San Antonio’s upper-class citizens. Open and close restaurant leading a team of wait staff to create the best fine-dining steakhouse experience. Extensive wine, liquor, and cocktail knowledge</p>
                     </div>

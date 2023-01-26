@@ -40,7 +40,7 @@ export default function Navbar() {
                     {
                         menuItems.map(item => {
                             return (
-                                <li key={item.title} className="text-black-500 ml-4 text-2xl my-4">
+                                <li key={item.title} onClick={() => {setMenuToggle(!menuToggle)}} className="text-black-500 ml-4 text-2xl my-4">
                                     <Link href={item.path}>{item.title}</Link>
                                 </li>
                             )
