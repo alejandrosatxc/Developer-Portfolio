@@ -5,6 +5,15 @@ import { Inter } from '@next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const items = [
+    'Build Apps from the ground up',
+    'Create your business or personal website',
+    'Automate workflows',
+    'Solve business problems',
+    'Create new business logic',
+    'Fix existing software',
+    'Contribute to larger projects'
+  ]
   return (
     <>
       <Head>
@@ -13,23 +22,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <div className="flex flex-col justify-center place-items-center mx-4 my-8">
-          <h1 className="text-red-500 text-6xl text-center">Alejandro Zapien</h1>
-          <h2 className="text-red-500 text-4xl my-4 text-center">Full-Stack developer</h2>
-          <p className="text-red-500 text-lg text-center">Creating software solutions in every part of any tech-stack</p>
-        </div>
-        <div className="flex flex-col justify-center place-items-center">
-          <h2 className="text-4xl text-red-500">What I can do for you:</h2>
-          <ul className="text-3xl flex flex-col justify-center place-items-center text-red-500">
-            <li>Build Apps from the ground up</li>
-            <li>Create your business or personal website</li>
-            <li>Automate workflows</li>
-            <li>Solve business problems</li>
-            <li>Create new business logic</li>
-            <li>Fix existing software</li>
-            <li>Contribute to larger projects</li>
-          </ul>
-        </div>
+      <div className="flex flex-col justify-center place-items-center mx-4 my-8">
+        <h2 className="text-red-500 text-4xl my-2 text-center">Full-Stack developer</h2>
+        <h1 className="text-red-500 text-6xl my-4 text-center">Alejandro Zapien</h1>
+        <p className="text-red-500 text-2xl my-2 text-center">Creating software solutions in every part of any tech-stack</p>
+      </div>
+      <div className="flex flex-col justify-center place-items-center">
+        <h2 className="text-4xl text-red-500 text-center">What I can do for you:</h2>
+        <ul className="text-3xl flex flex-col justify-center place-items-center text-red-500">
+          {items.map((item, index) => <li key={index} className="text-center my-4">{item}</li>)}
+        </ul>
+      </div>
     </>
   )
 }

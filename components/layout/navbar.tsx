@@ -36,7 +36,7 @@ export default function Navbar() {
                         <FontAwesomeIcon onClick={() => { setMenuToggle(!menuToggle) }} className="text-red-500 text-3xl" icon={faBars} />
                     </div>
                 </div>
-                <ul className={`${menuToggle ? 'visible' : 'hidden'} absolute right-0 top-24 rounded-md bg-white h-auto w-36`}>
+                <ul className={`${menuToggle ? 'animate-fade-in-down' : 'hidden'} absolute right-0 top-24 m-4 rounded-md bg-slate-500 h-auto w-64`}>
                     {
                         menuItems.map(item => {
                             return (
