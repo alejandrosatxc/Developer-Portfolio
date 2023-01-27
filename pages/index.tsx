@@ -28,8 +28,8 @@ export default function Home() {
         <p className="text-red-500 text-2xl my-2 text-center">Creating software solutions in every part of any tech-stack</p>
       </div>
       <div className="flex flex-col justify-center place-items-center">
-        <h2 className="text-4xl text-red-500 text-center">What I can do for you:</h2>
-        <ul className="text-3xl flex flex-col justify-center place-items-center text-red-500">
+        <h2 className="text-4xl text-red-500 text-center mx-2">What I can do for you:</h2>
+        <ul className="text-3xl flex flex-col justify-center place-items-center text-red-500 mx-2">
           {items.map((item, index) => <li key={index} className="text-center my-4">{item}</li>)}
         </ul>
       </div>
