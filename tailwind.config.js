@@ -47,6 +47,15 @@ module.exports = {
             opacity: '0',
             visibility: 'hidden'
           }
+        },
+        'typing' : {
+          '0%': { width: '0' },
+          '100%': { width: '100%' } 
+        },
+        'blink-caret' : {
+          '0%': {borderColor: 'transparent'},
+          '50%': {borderColor: 'orange'},
+          '100%': {borderColor: 'transparent'}
         }
       },
       boxShadow: {
@@ -60,6 +69,8 @@ module.exports = {
         '4000': '4000ms'
       },
       animation: {
+        'typing' : 'typing 3.5s steps(30, end)',
+        'blink-caret' : 'blink-caret .5s step-end infinite',
         'fade-in' : 'fade-in 1s ease-in 1s 1 forwards',
         'fade-in-up' : 'fade-in-up 1s ease-out',
         'fade-in-down' : 'fade-in-down 0.5s ease-out',
