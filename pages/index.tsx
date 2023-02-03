@@ -15,7 +15,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-
     </>
   )
 }
@@ -42,7 +41,7 @@ const Hero = () => {
     <>
       <div className="flex flex-col justify-center place-items-center mx-4 my-8">
         <h2 className={`${active ? 'opacity-100' : 'opacity-0'} duration-1000 transition delay-2000 text-red-500 text-4xl my-2 text-center font-mono`}>Full-Stack developer</h2>
-        <h1 className={`${active ? 'opacity-100' : 'opacity-0'} duration-1000 transition delay-1000 text-red-500 text-6xl my-4 text-center`}>Alejandro Zapien</h1>
+        <h1 className={`${active ? 'opacity-100 scale-100' : 'opacity-0 scale-[4]'} duration-1000 transition delay-1000 text-red-500 text-6xl my-4 text-center`}>Alejandro Zapien</h1>
         <p className={`${active ? 'opacity-100' : 'opacity-0'} duration-1000 transition delay-3000 text-red-500 text-2xl my-2 text-center font-mono`}>Creating software solutions in every part of any tech-stack</p>
       </div>
       <div className={`${active ? 'opacity-100' : 'opacity-0'} duration-1000 transition delay-4000 flex flex-col justify-center place-items-center`}>
