@@ -49,6 +49,16 @@ module.exports = {
           }
         }
       },
+      boxShadow: {
+        'neon': 'inset 0px -11px 12px -10px #EF4444'
+      },
+      transitionDelay: {
+        '0': '0ms',
+        '1000': '1000ms',
+        '2000': '2000ms',
+        '3000': '3000ms',
+        '4000': '4000ms'
+      },
       animation: {
         'fade-in' : 'fade-in 1s ease-in 1s 1 forwards',
         'fade-in-up' : 'fade-in-up 1s ease-out',
