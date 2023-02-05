@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -8,6 +11,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        russo: ['Russo One', ...defaultTheme.fontFamily.sans],
+        itim: ['Itim'],
+        nunito: ['Nunito']
+      },
       keyframes: {
         'fade-in': {
           '0%': {
@@ -17,7 +25,7 @@ module.exports = {
             opacity: '1'
           }
         },
-        'fade-in-up' : {
+        'fade-in-up': {
           '0%': {
             opacity: '0',
             transform: 'translateY(200px)',
@@ -31,7 +39,7 @@ module.exports = {
           '0%': {
             opacity: '0',
             visibility: 'hidden',
-            transform: 'translateY(-10px)'
+            transform: 'translateY(-100px)'
           },
           '100%': {
             opacity: '1',
@@ -48,14 +56,14 @@ module.exports = {
             visibility: 'hidden'
           }
         },
-        'typing' : {
+        'typing': {
           '0%': { width: '0' },
-          '100%': { width: '100%' } 
+          '100%': { width: '100%' }
         },
-        'blink-caret' : {
-          '0%': {borderColor: 'transparent'},
-          '50%': {borderColor: 'orange'},
-          '100%': {borderColor: 'transparent'}
+        'blink-caret': {
+          '0%': { borderColor: 'transparent' },
+          '50%': { borderColor: 'orange' },
+          '100%': { borderColor: 'transparent' }
         }
       },
       boxShadow: {
@@ -69,14 +77,29 @@ module.exports = {
         '4000': '4000ms'
       },
       animation: {
-        'typing' : 'typing 3.5s steps(30, end)',
-        'blink-caret' : 'blink-caret .5s step-end infinite',
-        'fade-in' : 'fade-in 1s ease-in 1s 1 forwards',
-        'fade-in-up' : 'fade-in-up 1s ease-out',
-        'fade-in-down' : 'fade-in-down 0.5s ease-out',
-        'fade-out' : 'fade-out 0.5s ease-out'
+        'typing': 'typing 3.5s steps(30, end)',
+        'blink-caret': 'blink-caret .5s step-end infinite',
+        'fade-in': 'fade-in 1s ease-in 1s 1 forwards',
+        'fade-in-up': 'fade-in-up 1s ease-out',
+        'fade-in-down': 'fade-in-down 0.5s ease-out forwards',
+        'fade-out': 'fade-out 0.5s ease-out'
       }
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(({ matchUtilities, theme }) => {
+      matchUtilities(
+        {
+          "animation-delay": (value) => {
+            return {
+              "animation-delay": value,
+            };
+          },
+        },
+        {
+          values: theme("transitionDelay"),
+        }
+      );
+    }),
+  ],
 }

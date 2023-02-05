@@ -18,17 +18,23 @@ export default function Navbar() {
         { title: "Projects", path: "/projects" },
         { title: "Resume", path: "/resume" }
     ]
+    const delays = [
+        'animation-delay-[4000ms]',
+        'animation-delay-[4100ms]',
+        'animation-delay-[4200ms]',
+        'animation-delay-[4300ms]'
+    ]
     return (
         <header>
             <nav className="bg-black h-24 w-full">
-                <div className="flex flex-row justify-between place-items-center w-full h-full px-4">
-                    <h1 className="text-red-500 text-3xl">AZ</h1>
+                <div className="flex flex-row justify-between place-items-center w-full h-full px-6">
+                    <Link href="/"><h1 className="text-red-500 text-3xl">AZ</h1></Link>
                     <ul className="hidden md:flex h-full flex-row justify-between place-items-center">
                         {
-                            menuItems.map(item => {
+                            menuItems.map((item, index) => {
                                 return (
-                                    <li key={item.title} className={`${router.pathname === item.path ? 'text-red-500 border-b-2 border-red-500 shadow-neon' : 'text-red-900' } transition hover:shadow-neon duration-300 hover:border-b-2 hover:border-red-500 hover:text-red-500 flex justify-center place-items-center text-2xl h-full mx-8`}>
-                                        <Link href={item.path}>{item.title}</Link>
+                                    <li key={item.title} className={`${router.pathname === item.path ? 'text-red-500 border-b-2 border-red-500 shadow-neon' : 'text-red-900' } animate-fade-in-down ${delays[index]} opacity-0 transition hover:shadow-neon duration-300 hover:border-b-2 hover:border-red-500 hover:text-red-500 flex justify-center place-items-center text-2xl font-nunito h-full mx-8`}>
+                                        <Link className={`h-full flex place-items-center`} href={item.path}>{item.title}</Link>
                                     </li>
                                 )
                             })
@@ -39,7 +45,7 @@ export default function Navbar() {
                         <FontAwesomeIcon onClick={() => { setMenuToggle(!menuToggle) }} className="text-red-500 text-3xl" icon={faBars} />
                     </div>
                 </div>
-                <ul className={`${menuToggle ? 'animate-fade-in-down' : 'hidden'} z-50 absolute right-0 top-24 m-4 rounded-md bg-slate-500 h-auto w-64`}>
+                <ul className={`${menuToggle ? 'animate-fade-in-down' : 'hidden'} z-50 absolute right-0 top-24 m-4 rounded-md backdrop-blur-md bg-white/30 h-auto w-64`}>
                     {
                         menuItems.map(item => {
                             return (
