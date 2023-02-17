@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import { useEffect, useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import OnScrollElement from '../components/OnScrollElement'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -65,21 +67,24 @@ const Hero = () => {
         </div>
         <p className={`${active ? 'opacity-100' : 'opacity-0'} duration-1000 delay-3000 transition-all md:w-1/2 mt-10 w-auto text-slate-300 text-xl text-left font-nunito`}>I'm a <span className='text-teal-300'>software engineer</span> that specializes in building apps, websites, front-ends and back-ends. I <span className='text-teal-300'>deploy and maintain</span> them too. </p>
       </section>
-      <section className={`${active ? 'animate-fade-up' : 'opacity-0'} transition-all delay-4000 duration-1000 h-72 my-4 w-full p-12`}>
+      <div className={`${active ? 'opacity-100' : 'opacity-0'} duration-1000 delay-4000 transition-all animate-bounce text-white text-center w-18 h-8 bottom-4 -ml-9 left-1/2 fixed`}>
+        <FontAwesomeIcon className="text-teal-400" icon={faArrowDown} size={'2x'} />
+      </div>
+      <section className={`${active ? 'animate-fade-up' : 'opacity-0'} transition-all delay-4000 duration-1000 h-auto my-10 md:my-4 w-full md:p-12 p-2`}>
         <h2 className="text-teal-300 text-3xl">About Me</h2>
         <p className={`md:w-1/2 w-auto text-slate-300 text-xl my-10 text-left font-nunito`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatibus nulla totam aspernatur alias rem ipsum harum a inventore animi? Blanditiis, aspernatur! Debitis dolores voluptatem deleniti esse at optio. Doloremque.</p>
       </section>
-      <OnScrollElement>
-        <h2 className="text-teal-300 text-3xl">About me</h2>
-        <p className={`md:w-1/2 w-auto text-slate-300 text-xl my-10 text-left font-nunito`}> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ipsam voluptas officia in, vitae asperiores soluta. Culpa tempore at voluptatem esse, dolorem quo adipisci quia, consequatur aut consequuntur neque ex. </p>
+      <OnScrollElement animation='animate-fade-in-up' cssStyling='transition duration-1000 h-auto my-10 md:my-4 w-full md:p-12 p-2' hiddenStyling='opacity-0'>
+        <h2 className="text-teal-300 text-3xl text-right">About me</h2>
+        <p className={`md:w-1/2 w-auto text-slate-300 text-xl my-10 text-right float-right font-nunito`}> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ipsam voluptas officia in, vitae asperiores soluta. Culpa tempore at voluptatem esse, dolorem quo adipisci quia, consequatur aut consequuntur neque ex. </p>
       </OnScrollElement>
-      <OnScrollElement>
-        <h2 className="text-teal-300 text-3xl text-end">About me</h2>
+      <OnScrollElement animation='animate-fade-in-up' cssStyling='transition duration-1000 h-auto my-10 md:my-4 w-full md:p-12 p-2' hiddenStyling='opacity-0'>
+        <h2 className="text-teal-300 text-3xl text-left">About me</h2>
         <p className={`md:w-1/2 w-auto text-slate-300 text-xl my-10 text-left font-nunito`}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laboriosam aperiam voluptate neque vitae autem, nam non animi rem dolorum dolor accusantium quis ut possimus, deleniti magni quas tenetur reprehenderit. </p>
       </OnScrollElement>
-      <OnScrollElement>
-        <h2 className="text-teal-300 text-3xl">About me</h2>
-        <p className={`md:w-1/2 w-auto text-slate-300 text-xl my-10 text-left font-nunito`}> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita adipisci magni ipsa saepe harum, animi, velit ex officiis cupiditate aliquam temporibus eveniet impedit molestiae quidem dolorem quasi iusto provident blanditiis! </p>
+      <OnScrollElement animation='animate-fade-in-up' cssStyling='transition duration-1000 h-auto my-10 md:my-4 w-full md:p-12 p-2 ' hiddenStyling='opacity-0'>
+        <h2 className="text-teal-300 text-3xl text-right">About me</h2>
+        <p className={`md:w-1/2 w-auto text-slate-300 text-xl my-10 text-right float-right font-nunito`}> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita adipisci magni ipsa saepe harum, animi, velit ex officiis cupiditate aliquam temporibus eveniet impedit molestiae quidem dolorem quasi iusto provident blanditiis! </p>
       </OnScrollElement>
 
       {/* <div className={`${active ? 'opacity-100' : 'opacity-0'} duration-1000 transition delay-4000 flex flex-col justify-center place-items-center`}>
