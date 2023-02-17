@@ -17,6 +17,10 @@ module.exports = {
         nunito: ['Nunito']
       },
       keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 }
+        },
         'fade-in': {
           '0%': {
             opacity: '0',
@@ -82,7 +86,11 @@ module.exports = {
         'fade-in': 'fade-in 1s ease-in 1s 1 forwards',
         'fade-in-up': 'fade-in-up 1s ease-out',
         'fade-in-down': 'fade-in-down 0.5s ease-out forwards',
-        'fade-out': 'fade-out 0.5s ease-out'
+        'fade-out': 'fade-out 0.5s ease-out',
+        'fadeIn': "fadeIn 2s ease-in forwards",
+      },
+      variants: {
+        animation: ["motion-safe"]
       }
     },
   },

@@ -28,7 +28,7 @@ export default function Navbar() {
         <header>
             <nav className="bg-black h-24 w-full">
                 <div className="flex flex-row justify-between place-items-center w-full h-full px-6">
-                    <Link href="/"><h1 className="text-red-500 text-3xl">AZ</h1></Link>
+                    <Link href="/"><h1 className="text-red-500 text-3xl animate-fade-in-down animation-delay-[3900ms] opacity-0">AZ</h1></Link>
                     <ul className="hidden md:flex h-full flex-row justify-between place-items-center">
                         {
                             menuItems.map((item, index) => {
@@ -40,9 +40,9 @@ export default function Navbar() {
                             })
                         }
                     </ul>
-                    <Link href="https://github.com/alejandrosatxc"><FontAwesomeIcon className="text-red-500 text-4xl" icon={faGithub} /></Link>
+                    <Link href="https://github.com/alejandrosatxc"><FontAwesomeIcon className="text-red-500 text-4xl animate-fade-in-down opacity-0 animation-delay-[4400ms]" icon={faGithub} /></Link>
                     <div className="md:hidden">
-                        <FontAwesomeIcon onClick={() => { setMenuToggle(!menuToggle) }} className="text-red-500 text-3xl" icon={faBars} />
+                        <FontAwesomeIcon onClick={() => { setMenuToggle(!menuToggle) }} className="animate-fade-in-down animation-delay-[4500ms] opacity-0 text-red-500 text-3xl" icon={faBars} />
                     </div>
                 </div>
                 <ul className={`${menuToggle ? 'animate-fade-in-down' : 'hidden'} z-50 absolute right-0 top-24 m-4 rounded-md backdrop-blur-md bg-white/30 h-auto w-64`}>
