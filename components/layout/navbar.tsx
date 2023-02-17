@@ -14,7 +14,7 @@ export default function Navbar() {
 
     const menuItems = [
         { title: "Home", path: "/" },
-        { title: "Contact", path: "/contact" },
+        { title: "Contact", path: "mailto:alejandrozapien09@gmail.com" },
         { title: "Projects", path: "/projects" },
         { title: "Resume", path: "/resume" }
     ]
@@ -49,7 +49,7 @@ export default function Navbar() {
                     {
                         menuItems.map(item => {
                             return (
-                                <li key={item.title} onClick={() => { setMenuToggle(!menuToggle) }} className="text-black-500 ml-4 text-2xl my-4">
+                                <li key={item.title} onClick={() => { setMenuToggle(!menuToggle) }} className="text-slate-800 text-center text-4xl p-8 font-light">
                                     <Link href={item.path}>{item.title}</Link>
                                 </li>
                             )

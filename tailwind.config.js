@@ -54,7 +54,7 @@ module.exports = {
         'slide-in-left': {
           '0%': {
             visibility: 'hidden',
-            transform: 'translateX(200px)'
+            transform: 'translateX(300px)'
           },
           '100%': {
             visibility: 'visible',
@@ -64,7 +64,7 @@ module.exports = {
         'slide-in-right': {
           '0%': {
             visibility: 'hidden',
-            transform: 'translateX(-200px)'
+            transform: 'translateX(-300px)'
           },
           '100%': {
             visibility: 'visible',
