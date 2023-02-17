@@ -8,7 +8,7 @@ interface OnScrollElementProps {
     hiddenStyling: string
 }
 
-export default function slideInElement({ children, animation, cssStyling, hiddenStyling }: OnScrollElementProps) {
+export default function OnScrollElement({ children, animation, cssStyling, hiddenStyling }: OnScrollElementProps) {
     const [isVisible, setIsVisible] = useState(false)
     const { ref, inView, entry } = useInView({
         threshold: 0.50,
