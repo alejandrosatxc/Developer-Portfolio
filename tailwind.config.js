@@ -53,24 +53,20 @@ module.exports = {
         },
         'slide-in-left': {
           '0%': {
-            opacity: '0',
             visibility: 'hidden',
             transform: 'translateX(200px)'
           },
           '100%': {
-            opacity: '1',
             visibility: 'visible',
             transform: 'translateX(0)'
           }
         },
         'slide-in-right': {
           '0%': {
-            opacity: '0',
             visibility: 'hidden',
             transform: 'translateX(-200px)'
           },
           '100%': {
-            opacity: '1',
             visibility: 'visible',
             transform: 'translateX(0)'
           }
