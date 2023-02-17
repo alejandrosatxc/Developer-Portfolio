@@ -51,6 +51,18 @@ module.exports = {
             transform: 'translateY(0)'
           }
         },
+        'slide-in-left': {
+          '0%': {
+            opacity: '0',
+            visibility: 'hidden',
+            transform: 'translateX(200px)'
+          },
+          '100%': {
+            opacity: '1',
+            visibility: 'visible',
+            transform: 'translateX(0)'
+          }
+        },
         'fade-out': {
           '0%': {
             opacity: '1',
@@ -88,6 +100,7 @@ module.exports = {
         'fade-in-down': 'fade-in-down 0.5s ease-out forwards',
         'fade-out': 'fade-out 0.5s ease-out',
         'fadeIn': "fadeIn 2s ease-in forwards",
+        'slide-in-left': 'slide-in-left 0.5s ease-out'
       },
       variants: {
         animation: ["motion-safe"]

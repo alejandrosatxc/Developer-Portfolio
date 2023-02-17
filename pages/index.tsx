@@ -56,7 +56,7 @@ const Hero = () => {
 
   return (
     <div className="flex flex-col md:mx-12 mx-5">
-      <section className="flex flex-col justify-center place-items-start md:p-12 p-1 my-6">
+      <section className="flex flex-col justify-center place-items-start md:p-12 p-1 mb-6 mt-32">
         <h2 className={`${active ? 'opacity-100 scale-100' : 'scale-[4] opacity-0'} mb-8 duration-1000 transition delay-2000 text-teal-300 text-4xl text-left font-mono`}>Full-Stack developer</h2>
         {/* <h1 className={`${active ? 'opacity-100 scale-100' : 'opacity-0 scale-[4]'} duration-1000 transition delay-1000 text-red-500 text-6xl my-4 text-center font-russo`}>Alejandro Zapien</h1> */}
         <div className="flex flex-row h-12 mb-4">
@@ -65,9 +65,9 @@ const Hero = () => {
         <div className="flex flex-row h-12">
           {last_name.map((letter, index) => <span key={index} className={`relative text-6xl hover:text-teal-300 text-white hover:text-7xl cursor-default transition-all animate-fade-in-down ${delays[index]} opacity-0 font-russo`}>{letter}</span>)}
         </div>
-        <p className={`${active ? 'opacity-100' : 'opacity-0'} duration-1000 delay-3000 transition-all md:w-1/2 mt-10 w-auto text-slate-300 text-xl text-left font-nunito`}>I&aposm a <span className='text-teal-300'>software engineer</span> that specializes in building apps, websites, front-ends and back-ends. I <span className='text-teal-300'>deploy and maintain</span> them too. </p>
+        <p className={`${active ? 'opacity-100' : 'opacity-0'} duration-1000 delay-3000 transition-all md:w-1/2 mt-10 w-auto text-slate-300 text-xl text-left font-nunito`}>I&apos;m a <span className='text-teal-300'>software engineer</span> that specializes in building apps, websites, front-ends and back-ends. I <span className='text-teal-300'>deploy and maintain</span> them too. </p>
       </section>
-      <div className={`${active ? 'opacity-100' : 'opacity-0'} duration-1000 delay-4000 transition-all animate-bounce text-white text-center w-18 h-8 bottom-4 -ml-9 left-1/2 fixed`}>
+      <div className={`${active ? 'opacity-100' : 'opacity-0'} duration-1000 delay-4000 transition-all animate-bounce text-white text-center w-[20px] h-8 bottom-4 -ml-[10px] left-1/2 fixed`}>
         <FontAwesomeIcon className="text-teal-400" icon={faArrowDown} size={'2x'} />
       </div>
       <section className={`${active ? 'animate-fade-up' : 'opacity-0'} transition-all delay-4000 duration-1000 h-auto my-10 md:my-4 w-full md:p-12 p-2`}>

@@ -26,7 +26,7 @@ export default function Navbar() {
     ]
     return (
         <header>
-            <nav className="bg-black h-24 w-full">
+            <nav className="bg-black h-24 fixed z-50 w-full">
                 <div className="flex flex-row justify-between place-items-center w-full h-full px-6">
                     <Link href="/"><h1 className="text-red-500 text-3xl animate-fade-in-down animation-delay-[3900ms] opacity-0">AZ</h1></Link>
                     <ul className="hidden md:flex h-full flex-row justify-between place-items-center">
@@ -45,7 +45,7 @@ export default function Navbar() {
                         <FontAwesomeIcon onClick={() => { setMenuToggle(!menuToggle) }} className="animate-fade-in-down animation-delay-[4500ms] opacity-0 text-red-500 text-3xl" icon={faBars} />
                     </div>
                 </div>
-                <ul className={`${menuToggle ? 'animate-fade-in-down' : 'hidden'} z-50 absolute right-0 top-24 m-4 rounded-md backdrop-blur-md bg-white/30 h-auto w-64`}>
+                <ul className={`${menuToggle ? 'animate-slide-in-left' : 'hidden'} z-50 fixed right-0 top-24 backdrop-blur-md bg-white/30 h-screen w-64`}>
                     {
                         menuItems.map(item => {
                             return (
