@@ -72,7 +72,7 @@ const Hero = () => {
       </div>
       <section className={`${active ? 'animate-fade-up' : 'opacity-0'} transition-all delay-4000 duration-1000 h-auto my-10 md:my-4 w-full md:p-12 p-2`}>
         <h2 className="text-teal-300 text-3xl">About Me</h2>
-        <p className={`md:w-1/2 w-auto text-slate-300 text-xl my-10 text-left font-nunito`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatibus nulla totam aspernatur alias rem ipsum harum a inventore animi? Blanditiis, aspernatur! Debitis dolores voluptatem deleniti esse at optio. Doloremque.</p>
+        <p className={`md:w-1/2 w-auto text-slate-300 text-xl my-10 text-left font-nunito`}>I live and work in San Antonio TX. Originally, I am from Irapuato, Guanajuato Mexico. I like to code and help others by creating software and apps that do something useful for others, share information, manage resources, or generate a profit</p>
       </section>
       <OnScrollElement animation='animate-fade-in-up' cssStyling='transition duration-1000 h-auto my-10 md:my-4 w-full md:p-12 p-2' hiddenStyling='opacity-0'>
         <h2 className="text-teal-300 text-3xl text-right">About me</h2>
