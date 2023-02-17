@@ -70,15 +70,16 @@ const Hero = () => {
       <div className={`${active ? 'opacity-100' : 'opacity-0'} duration-1000 delay-4000 transition-all animate-bounce text-white text-center w-[20px] h-8 bottom-4 -ml-[10px] left-1/2 fixed`}>
         <FontAwesomeIcon className="text-teal-400" icon={faArrowDown} size={'2x'} />
       </div>
-      <section className={`${active ? 'animate-fade-up' : 'opacity-0'} transition-all delay-4000 duration-1000 h-auto my-10 md:my-4 w-full md:p-12 p-2`}>
+      <OnScrollElement animation='animate-fade-in-up' cssStyling='transition duration-1000 h-auto my-10 md:my-4 w-full md:p-12 p-2' hiddenStyling='opacity-0'>
         <h2 className="text-teal-300 text-3xl">About Me</h2>
-        <p className={`md:w-1/2 w-auto text-slate-300 text-xl my-10 text-left font-nunito`}>I live and work in San Antonio TX. Originally, I am from Irapuato, Guanajuato Mexico. I like to code and help others by creating software and apps that do something useful for others, share information, manage resources, or generate a profit</p>
-      </section>
-      <OnScrollElement animation='animate-fade-in-up' cssStyling='transition duration-1000 h-auto my-10 md:my-4 w-full md:p-12 p-2' hiddenStyling='opacity-0'>
-        <h2 className="text-teal-300 text-3xl text-right">About me</h2>
-        <p className={`md:w-1/2 w-auto text-slate-300 text-xl my-10 text-right float-right font-nunito`}> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ipsam voluptas officia in, vitae asperiores soluta. Culpa tempore at voluptatem esse, dolorem quo adipisci quia, consequatur aut consequuntur neque ex. </p>
+        <p className={`md:w-1/2 w-auto text-slate-300 text-xl my-10 text-left font-nunito`}>I live and work in San Antonio TX. Originally, I am from Irapuato, Guanajuato Mexico. I like to code and help people by creating software and apps that provide services, do something useful for others, share information, manage resources, or generate a profit</p>
       </OnScrollElement>
-      <OnScrollElement animation='animate-fade-in-up' cssStyling='transition duration-1000 h-auto my-10 md:my-4 w-full md:p-12 p-2' hiddenStyling='opacity-0'>
+
+      <OnScrollElement animation='animate-slide-in-left' cssStyling='transition duration-1000 h-auto my-10 md:my-4 w-full md:p-12 p-2' hiddenStyling='opacity-0'>
+        <h2 className="text-teal-300 text-3xl text-right">Skills</h2>
+        <p className={`md:w-1/2 w-auto text-slate-300 text-xl my-10 text-right float-right font-nunito`}>As a Full-stack developer, I create apps and software working with HTML, CSS, JavaScript and Linux. I have been leveraging the power of Next.js, React, and tailwind to create websites, front-ends and REST APIs. I can manage MongoDB, MySQL, and PostgresSQL Databases, and LAMP stack and Node.js deployments using Vercel, Heroku, Amazon Web Services, and Google Cloud platforms.</p>
+      </OnScrollElement>
+      <OnScrollElement animation='animate-slide-in-right' cssStyling='transition duration-1000 h-auto my-10 md:my-4 w-full md:p-12 p-2' hiddenStyling='opacity-0'>
         <h2 className="text-teal-300 text-3xl text-left">About me</h2>
         <p className={`md:w-1/2 w-auto text-slate-300 text-xl my-10 text-left font-nunito`}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laboriosam aperiam voluptate neque vitae autem, nam non animi rem dolorum dolor accusantium quis ut possimus, deleniti magni quas tenetur reprehenderit. </p>
       </OnScrollElement>
