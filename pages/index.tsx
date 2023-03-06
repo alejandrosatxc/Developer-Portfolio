@@ -57,6 +57,12 @@ const Hero = () => {
     "google-cloud-1.svg",
   ]
 
+  const techLogos5 = [
+    "typescript.svg",
+    "linux-tux.svg",
+    "tailwind-css-2.svg",
+  ]
+
   const items = [
     'Build Apps from the ground up',
     'Create your business or personal website',
@@ -204,10 +210,32 @@ const Hero = () => {
 
             }</ul>
           </div>
+          <div className="my-1 min-w-[320px] relative flex overflow-x-hidden">
+            <ul className="animate-marquee flex whitespace-nowrap mx-1">{
+              techLogos5.map((logo, index) => {
+                return (
+                  <li key={index} className='list-none flex-shrink-0 mx-4'>
+                    <Image alt={logo} src={logo} height={80} width={80} />
+                  </li>
+                )
+              })
+
+            }</ul>
+            <ul className=" absolute top-0 animate-marquee2 flex whitespace-nowrap">{
+              techLogos5.map((logo, index) => {
+                return (
+                  <li key={index} className='list-none flex-shrink-0 mx-4'>
+                    <Image alt={logo} src={logo} height={80} width={80} />
+                  </li>
+                )
+              })
+
+            }</ul>
+          </div>
         </div>
         <div className='sm:w-1/2'>
           <h2 className="text-teal-300 my-4 text-5xl sm:text-3xl text-center sm:text-right font-bold">Skills</h2>
-          <p className={`w-auto text-slate-300 text-lg sm:text-xl sm:text-right float-right font-nunito`}>As a Full-stack developer, I create apps and software working with HTML, CSS, JavaScript and Linux. I have been leveraging the power of Next.js, React, and tailwind to create websites, front-ends and REST APIs. I can manage MongoDB, MySQL, and PostgresSQL Databases, and LAMP stack and Node.js deployments using Vercel, Heroku, Amazon Web Services, and Google Cloud platforms.</p>
+          <p className={`w-auto text-slate-300 text-lg sm:text-xl sm:text-right float-right font-nunito`}>As a Full-stack developer, I create apps and software working with HTML, CSS, JavaScript, TypeScript and Linux. I have been leveraging the power of Next.js, React, and tailwind to create websites, front-ends and REST APIs. I can manage MongoDB, MySQL, and PostgresSQL Databases, and LAMP stack and Node.js deployments using Vercel, Heroku, Amazon Web Services, and Google Cloud platforms.</p>
         </div>
       </OnScrollElement>
       <OnScrollElement animation='animate-slide-in-right' cssStyling='flex flex-row flex-wrap transition w-full h-auto my-10 md:my-4 md:p-12 p-2' hiddenStyling='opacity-0'>
