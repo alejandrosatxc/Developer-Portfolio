@@ -29,6 +29,14 @@ module.exports = {
             opacity: '1'
           }
         },
+        'marquee': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' }
+        },
+        'marquee2': {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' }
+        },
         'fade-in-up': {
           '0%': {
             opacity: '0',
@@ -109,7 +117,9 @@ module.exports = {
         'fade-out': 'fade-out 0.5s ease-out',
         'fadeIn': "fadeIn 2s ease-in forwards",
         'slide-in-left': 'slide-in-left 0.5s ease-out',
-        'slide-in-right': 'slide-in-right 0.5s ease-out'
+        'slide-in-right': 'slide-in-right 0.5s ease-out',
+        'marquee': 'marquee 5s linear infinite',
+        'marquee2': 'marquee2 5s linear infinite'
       },
       variants: {
         animation: ["motion-safe"]
