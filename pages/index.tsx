@@ -110,6 +110,10 @@ const Hero = () => {
       <div className={`${active ? 'opacity-100' : 'opacity-0'} duration-1000 delay-4000 transition-all animate-bounce text-white text-center w-[20px] h-8 bottom-4 -ml-[10px] left-1/2 fixed`}>
         <FontAwesomeIcon className="text-teal-400" icon={faArrowDown} size={'2x'} />
       </div>
+
+      <div className="spacer layer1"></div>
+      <div className="spacer layer2"></div>
+      
       <OnScrollElement animation='animate-fade-in-up' cssStyling='transition flex flex-row flex-wrap w-full h-auto my-4 md:my-4 md:p-12 p-2' hiddenStyling='opacity-0'>
         <div className=" sm:w-1/2">
           <h2 className="text-teal-300 text-center sm:text-left text-5xl sm:text-3xl my-4 font-bold">About Me</h2>
@@ -120,6 +124,9 @@ const Hero = () => {
         </div>
       </OnScrollElement>
 
+      <div className="spacer layer1"></div>
+      <div className="spacer layer2"></div>
+      
       <OnScrollElement animation='animate-slide-in-left' cssStyling='transition flex flex-row flex-wrap w-full h-auto my-4 md:my-4 md:p-12 p-2' hiddenStyling='opacity-0'>
         <div className="flex flex-col place-items-center justify-center sm:w-1/2 w-full">
           <div className="my-1 min-w-[320px] relative flex overflow-x-hidden">
@@ -238,6 +245,10 @@ const Hero = () => {
           <p className={`w-auto text-slate-300 text-lg sm:text-xl sm:text-right float-right font-nunito`}>As a Full-stack developer, I create apps and software working with HTML, CSS, JavaScript, TypeScript and Linux. I have been leveraging the power of Next.js, React, and tailwind to create websites, front-ends and REST APIs. I can manage MongoDB, MySQL, and PostgresSQL Databases, and LAMP stack and Node.js deployments using Vercel, Heroku, Amazon Web Services, and Google Cloud platforms.</p>
         </div>
       </OnScrollElement>
+
+      <div className="spacer layer1"></div>
+      <div className="spacer layer2"></div>
+
       <OnScrollElement animation='animate-slide-in-right' cssStyling='flex flex-row flex-wrap transition w-full h-auto my-10 md:my-4 md:p-12 p-2' hiddenStyling='opacity-0'>
         <div className='flex flex-col sm:w-1/2'>
           <h2 className="text-teal-300 text-3xl text-center md:text-left font-bold">Some projects I am working on</h2>
