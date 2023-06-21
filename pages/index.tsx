@@ -294,9 +294,9 @@ const Hero = () => {
           }
         </div>
         <div className='flex flex-col h-auto sm:w-1/2 w-full'>
-          <div onClick={() => { setCurrentProject("1") }} onMouseOver={() => { setCurrentProject("1") }} className="flex place-items-center justify-center text-xl font-bold w-full h-14 my-2 bg-white rounded">Bexar Facts Data Dashboard</div>
-          <div onClick={() => { setCurrentProject("2") }} onMouseOver={() => { setCurrentProject("2") }} className="flex place-items-center justify-center text-xl font-bold w-full h-14 my-2 bg-white rounded">Conversation-Flow Dynamic Forms</div>
-          <div onClick={() => { setCurrentProject("3") }} onMouseOver={() => { setCurrentProject("3") }} className="flex place-items-center justify-center text-xl font-bold w-full h-14 my-2 bg-white rounded">Draftee, Template-to-Form Document Automation</div>
+          <div onClick={() => { setCurrentProject("1") }} onMouseOver={() => { setCurrentProject("1") }} className="flex text-center place-items-center justify-center text-xl font-bold w-full h-14 my-2 bg-white rounded">Bexar Facts Data Dashboard</div>
+          <div onClick={() => { setCurrentProject("2") }} onMouseOver={() => { setCurrentProject("2") }} className="flex text-center place-items-center justify-center text-xl font-bold w-full h-14 my-2 bg-white rounded">Conversation-Flow Dynamic Forms</div>
+          <div onClick={() => { setCurrentProject("3") }} onMouseOver={() => { setCurrentProject("3") }} className="flex text-center place-items-center justify-center text-xl font-bold w-full h-14 my-2 bg-white rounded">Draftee, Template-to-Form Document Automation</div>
 
         </div>
       </OnScrollElement>
