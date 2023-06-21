@@ -15,7 +15,7 @@ export default function Navbar() {
     const menuItems = [
         { title: "Home", path: "/" },
         { title: "Contact", path: "mailto:alejandrozapien09@gmail.com" },
-        { title: "Resume", path: "https://drive.google.com/file/d/1dBDmSCmXUcqKFaFXZry2BN5-ktOInlrS/view?usp=sharing" },
+        { title: "Resume", path: "https://drive.google.com/file/d/16Z1_cwQ7yIJR_0tp-Kl-okI9uqofr2LC/view?usp=sharing" },
     ]
     const delays = [
         'animation-delay-[4000ms]',
