@@ -27,7 +27,7 @@ export default function Navbar() {
         <header>
             <nav className="bg-black md:h-24 h-[12vh] fixed z-50 w-full">
                 <div className="flex flex-row justify-between place-items-center w-full h-full px-6">
-                    <Link href="/"><h1 className="text-teal-300 text-3xl animate-fade-in-down animation-delay-[3900ms] opacity-0">AZ</h1></Link>
+                    <Link href="/"><h1 className="w-[80px] text-teal-300 text-3xl animate-fade-in-down animation-delay-[3900ms] opacity-0">AZ</h1></Link>
                     <ul className="hidden md:flex h-full flex-row justify-between place-items-center">
                         {
                             menuItems.map((item, index) => {
@@ -39,7 +39,7 @@ export default function Navbar() {
                             })
                         }
                     </ul>
-                    <div className="flex flex-row w-auto gap-4">
+                    <div className="flex flex-row w-[80px] gap-4">
                         <Link href="https://linkedin.com/in/alejandro-zapien-a13ab84b"><FontAwesomeIcon className="text-teal-300 text-4xl animate-fade-in-down opacity-0 animation-delay-[4300ms]" icon={faLinkedin} /></Link>
                         <Link href="https://github.com/alejandrosatxc"><FontAwesomeIcon className="text-teal-300 text-4xl animate-fade-in-down opacity-0 animation-delay-[4400ms]" icon={faGithub} /></Link>
                     </div>

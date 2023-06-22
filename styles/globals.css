@@ -43,5 +43,29 @@
 }
 
 .layer2 {
-  background-image: url('../public/layered-waves-haikei-4.svg');
+  background: url('../public/layered-waves-haikei-4.svg');
+}
+
+.fade-left {
+  --mask: linear-gradient(to left, 
+  rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) 40%, 
+  rgba(0,0,0, 0) 95%, rgba(0,0,0, 0) 0
+) 100% 50% / 100% 100% repeat-x;
+
+
+font: 2em/1.6em Arial;
+-webkit-mask: var(--mask); 
+mask: var(--mask);
+}
+
+.fade-right {
+  --mask: linear-gradient(to right, 
+  rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) 40%, 
+  rgba(0,0,0, 0) 95%, rgba(0,0,0, 0) 0
+) 100% 50% / 100% 100% repeat-x;
+
+
+font: 2em/1.6em Arial;
+-webkit-mask: var(--mask); 
+mask: var(--mask);
 }

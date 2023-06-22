@@ -128,8 +128,8 @@ const Hero = () => {
       <div className="spacer layer2"></div>
       
       <OnScrollElement animation='animate-slide-in-left' cssStyling='transition flex flex-row flex-wrap w-full h-auto my-4 md:my-4 md:p-12 p-2' hiddenStyling='opacity-0'>
-        <div className="flex flex-col place-items-center justify-center sm:w-1/2 w-full">
-          <div className="my-1 min-w-[320px] relative flex overflow-x-hidden">
+        <div className="fade-left z-10 flex flex-col place-items-center justify-center sm:w-1/2 w-full">
+          <div className="fade-right my-1 min-w-[320px] relative flex overflow-x-hidden">
             <ul className="animate-marquee flex whitespace-nowrap mx-1">{
               techLogos1.map((logo, index) => {
                 return (
@@ -151,8 +151,8 @@ const Hero = () => {
 
             }</ul>
           </div>
-          <div className="my-1 min-w-[320px] relative flex overflow-x-hidden">
-            <ul className="animate-marquee flex whitespace-nowrap mx-1">{
+          <div className="fade-right my-1 min-w-[320px] relative flex overflow-x-hidden">
+            <ul className="animate-marquee-left flex whitespace-nowrap mx-1">{
               techLogos2.map((logo, index) => {
                 return (
                   <li key={index} className='list-none flex-shrink-0 mx-4'>
@@ -162,7 +162,7 @@ const Hero = () => {
               })
 
             }</ul>
-            <ul className=" absolute top-0 animate-marquee2 flex whitespace-nowrap">{
+            <ul className=" absolute top-0 animate-marquee2-left flex whitespace-nowrap">{
               techLogos2.map((logo, index) => {
                 return (
                   <li key={index} className='list-none flex-shrink-0 mx-4'>
@@ -173,7 +173,7 @@ const Hero = () => {
 
             }</ul>
           </div>
-          <div className="my-1 min-w-[320px] relative flex overflow-x-hidden">
+          <div className="fade-right my-1 min-w-[320px] relative flex overflow-x-hidden">
             <ul className="animate-marquee flex whitespace-nowrap mx-1">{
               techLogos3.map((logo, index) => {
                 return (
@@ -195,8 +195,8 @@ const Hero = () => {
 
             }</ul>
           </div>
-          <div className="my-1 min-w-[320px] relative flex overflow-x-hidden">
-            <ul className="animate-marquee flex whitespace-nowrap mx-1">{
+          <div className="fade-right my-1 min-w-[320px] relative flex overflow-x-hidden">
+            <ul className="animate-marquee-left flex whitespace-nowrap mx-1">{
               techLogos4.map((logo, index) => {
                 return (
                   <li key={index} className='list-none flex-shrink-0 mx-4'>
@@ -206,7 +206,7 @@ const Hero = () => {
               })
 
             }</ul>
-            <ul className=" absolute top-0 animate-marquee2 flex whitespace-nowrap">{
+            <ul className=" absolute top-0 animate-marquee2-left flex whitespace-nowrap">{
               techLogos4.map((logo, index) => {
                 return (
                   <li key={index} className='list-none flex-shrink-0 mx-4'>
@@ -217,7 +217,7 @@ const Hero = () => {
 
             }</ul>
           </div>
-          <div className="my-1 min-w-[320px] relative flex overflow-x-hidden">
+          <div className="fade-right my-1 min-w-[320px] relative flex overflow-x-hidden">
             <ul className="animate-marquee flex whitespace-nowrap mx-1">{
               techLogos5.map((logo, index) => {
                 return (

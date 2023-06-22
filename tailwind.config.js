@@ -37,6 +37,14 @@ module.exports = {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(0%)' }
         },
+        'marquee-left': {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0%)' }
+        },
+        'marquee2-left': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(100%)' }
+        },
         'fade-in-up': {
           '0%': {
             opacity: '0',
@@ -99,7 +107,8 @@ module.exports = {
         }
       },
       boxShadow: {
-        'neon': 'inset 0px -11px 12px -10px #EF4444'
+        'neon': 'inset 0px -11px 12px -10px #EF4444',
+        'shade': 'inset 0px 0px 140px 30px #0F172A'
       },
       transitionDelay: {
         '0': '0ms',
@@ -119,7 +128,9 @@ module.exports = {
         'slide-in-left': 'slide-in-left 0.5s ease-out',
         'slide-in-right': 'slide-in-right 0.5s ease-out',
         'marquee': 'marquee 5s linear infinite',
-        'marquee2': 'marquee2 5s linear infinite'
+        'marquee2': 'marquee2 5s linear infinite',
+        'marquee-left': 'marquee-left 5s linear infinite',
+        'marquee2-left': 'marquee2-left 5s linear infinite'
       },
       variants: {
         animation: ["motion-safe"]
