@@ -43,7 +43,7 @@
 }
 
 .layer2 {
-  background: url('../public/layered-waves-haikei-4.svg');
+  background-image: url('../public/layered-waves-haikei-4.svg');
 }
 
 .fade-left {
