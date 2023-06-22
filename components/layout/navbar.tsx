@@ -1,6 +1,6 @@
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { useState } from "react"
 import Link from "next/link"
 import { useRouter } from "next/router"
@@ -39,7 +39,11 @@ export default function Navbar() {
                             })
                         }
                     </ul>
-                    <Link href="https://github.com/alejandrosatxc"><FontAwesomeIcon className="text-teal-300 text-4xl animate-fade-in-down opacity-0 animation-delay-[4400ms]" icon={faGithub} /></Link>
+                    <div className="flex flex-row w-auto gap-4">
+                        <Link href="https://linkedin.com/in/alejandro-zapien-a13ab84b"><FontAwesomeIcon className="text-teal-300 text-4xl animate-fade-in-down opacity-0 animation-delay-[4300ms]" icon={faLinkedin} /></Link>
+                        <Link href="https://github.com/alejandrosatxc"><FontAwesomeIcon className="text-teal-300 text-4xl animate-fade-in-down opacity-0 animation-delay-[4400ms]" icon={faGithub} /></Link>
+                    </div>
+                    
                     <div className="md:hidden">
                         <FontAwesomeIcon onClick={() => { setMenuToggle(!menuToggle) }} className="animate-fade-in-down animation-delay-[4500ms] opacity-0 text-teal-300 text-3xl" icon={faBars} />
                     </div>

@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import OnScrollElement from '../components/OnScrollElement'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -294,9 +294,9 @@ const Hero = () => {
           }
         </div>
         <div className='flex flex-col h-auto sm:w-1/2 w-full'>
-          <div onClick={() => { setCurrentProject("1") }} onMouseOver={() => { setCurrentProject("1") }} className="flex text-center place-items-center justify-center text-xl font-bold w-full h-14 my-2 bg-white rounded">Bexar Facts Data Dashboard</div>
-          <div onClick={() => { setCurrentProject("2") }} onMouseOver={() => { setCurrentProject("2") }} className="flex text-center place-items-center justify-center text-xl font-bold w-full h-14 my-2 bg-white rounded">Conversation-Flow Dynamic Forms</div>
-          <div onClick={() => { setCurrentProject("3") }} onMouseOver={() => { setCurrentProject("3") }} className="flex text-center place-items-center justify-center text-xl font-bold w-full h-14 my-2 bg-white rounded">Draftee, Template-to-Form Document Automation</div>
+          <a href="https://bexar-dash-new.vercel.app/polls/7"><div onClick={() => { setCurrentProject("1") }} onMouseOver={() => { setCurrentProject("1") }} className="flex text-center place-items-center justify-center text-xl font-bold w-full h-14 my-2 bg-white rounded">Bexar Facts Data Dashboard</div></a>
+          <a href="https://my-tutoring-app.vercel.app/intake"><div onClick={() => { setCurrentProject("2") }} onMouseOver={() => { setCurrentProject("2") }} className="flex text-center place-items-center justify-center text-xl font-bold w-full h-14 my-2 bg-white rounded">Conversation-Flow Dynamic Forms</div></a>
+          <a href="https://draftee-git-dev-satx-consultants.vercel.app/"><div onClick={() => { setCurrentProject("3") }} onMouseOver={() => { setCurrentProject("3") }} className="flex text-center place-items-center justify-center text-xl font-bold w-full h-14 my-2 bg-white rounded">Draftee, Template-to-Form Document Automation</div></a>
 
         </div>
       </OnScrollElement>
@@ -304,6 +304,7 @@ const Hero = () => {
         <h2 className="text-teal-300 text-3xl text-center md:text-left font-bold">Whats Next?</h2>
         <Link className="bg-teal-400 rounded-lg flex place-items-center w-fit p-3 my-6" href="mailto:alejandrozapien09@gmail.com">Contact me <FontAwesomeIcon className="ml-2 text-black" icon={faArrowRight} size={"lg"} /></Link>
         <Link className="bg-teal-400 rounded-lg flex place-items-center w-fit p-3 my-6" href="https://github.com/alejandrosatxc">Check out my Github <FontAwesomeIcon className="ml-2 text-black" icon={faGithub} size={"lg"} /></Link>
+        <Link className="bg-teal-400 rounded-lg flex place-items-center w-fit p-3 my-6" href="https://linkedin.com/in/alejandro-zapien-a13ab84b">Linkedin <FontAwesomeIcon className="ml-2 text-black" icon={faLinkedin} size={"lg"} /></Link>
 
       </OnScrollElement>
 
