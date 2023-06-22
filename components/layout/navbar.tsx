@@ -26,8 +26,8 @@ export default function Navbar() {
     return (
         <header>
             <nav className="bg-black md:h-24 h-[12vh] fixed z-50 w-full">
-                <div className="flex flex-row justify-between place-items-center w-full h-full px-6">
-                    <Link href="/"><h1 className="w-[80px] text-teal-300 text-3xl animate-fade-in-down animation-delay-[3900ms] opacity-0">AZ</h1></Link>
+                <div className="flex flex-row justify-between place-items-center w-full h-full">
+                    <Link href="/"><h1 className="w-[80px] text-center text-teal-300 text-3xl animate-fade-in-down animation-delay-[3900ms] opacity-0">AZ</h1></Link>
                     <ul className="hidden md:flex h-full flex-row justify-between place-items-center">
                         {
                             menuItems.map((item, index) => {
@@ -45,7 +45,7 @@ export default function Navbar() {
                     </div>
                     
                     <div className="md:hidden">
-                        <FontAwesomeIcon onClick={() => { setMenuToggle(!menuToggle) }} className="animate-fade-in-down animation-delay-[4500ms] opacity-0 text-teal-300 text-3xl" icon={faBars} />
+                        <FontAwesomeIcon onClick={() => { setMenuToggle(!menuToggle) }} className="w-[80px] animate-fade-in-down animation-delay-[4500ms] opacity-0 text-teal-300 text-3xl text-center" icon={faBars} />
                     </div>
                 </div>
                 <div className={`${menuToggle ? 'animate-slide-in-left' : 'hidden'} z-50 fixed flex flex-col h-[88vh] right-0 backdrop-blur-md bg-white/30 w-64`}>
